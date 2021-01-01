@@ -2,7 +2,7 @@
 * @Author: Gavin
 * @Date:   2020-12-31 21:29:05
 * @Last Modified by:   Gavin
-* @Last Modified time: 2020-12-31 23:39:32
+* @Last Modified time: 2020-12-31 23:42:32
 */
 
 /* VARIABLES */
@@ -183,11 +183,15 @@ body {
     }
 
     .section-2__text {
-    	padding: 2rem;
+        padding: 2rem;
+    }
+
+    .section-2__text--small {
+        font-size: 1rem;
     }
 
     .section-3 {
-    	padding: 2rem;
+        padding: 2rem;
     }
 
     .section-3__list {
@@ -205,12 +209,12 @@ body {
 
 @media only screen and (max-width: 27.5rem) {
 
-	.container {
-		margin-top: 3rem;
-	}
+    .container {
+        margin-top: 3rem;
+    }
 
     .card {
-    	margin-top: ;
+        margin-top: ;
         grid-template-rows: 24rem repeat(2, 20rem);
         grid-template-columns: 25rem;
         grid-template-areas: "section-1"
