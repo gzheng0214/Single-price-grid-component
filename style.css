@@ -2,7 +2,7 @@
 * @Author: Gavin
 * @Date:   2020-12-31 21:29:05
 * @Last Modified by:   Gavin
-* @Last Modified time: 2020-12-31 23:42:32
+* @Last Modified time: 2020-12-31 23:44:24
 */
 
 /* VARIABLES */
@@ -220,6 +220,10 @@ body {
         grid-template-areas: "section-1"
             "section-2"
             "section-3";
+    }
+
+    .section-2__text--small {
+        font-size: 1.2rem;
     }
 
     .section-3__list {
