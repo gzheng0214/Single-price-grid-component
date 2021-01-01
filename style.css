@@ -2,7 +2,7 @@
 * @Author: Gavin
 * @Date:   2020-12-31 21:29:05
 * @Last Modified by:   Gavin
-* @Last Modified time: 2020-12-31 23:10:43
+* @Last Modified time: 2020-12-31 23:39:32
 */
 
 /* VARIABLES */
@@ -44,15 +44,13 @@ body {
 
 /* CARD */
 .card {
-    width: 50rem;
-    height: 37.5rem;
     background-color: white;
     border-radius: .5rem;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
     overflow: hidden;
     display: grid;
     grid-template-rows: 17.5rem 20rem;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 25rem);
     grid-template-areas: "section-1 section-1"
         "section-2 section-3";
 }
@@ -124,7 +122,7 @@ body {
 }
 
 .section-3 {
-	color: #fff;
+    color: #fff;
     background-color: rgb(74, 190, 189);
     grid-area: section-3;
     display: flex;
@@ -134,17 +132,17 @@ body {
 }
 
 .section-3__list {
-	margin-top: 1rem;
-	list-style: none;
+    margin-top: 1rem;
+    list-style: none;
 }
 
 .section-3__list-item {
-	font-size: 1.2rem;
-	color: var(--light-gray);
+    font-size: 1.2rem;
+    color: var(--light-gray);
 }
 
 .section-3__list-item:not(:last-child) {
-	margin-bottom: .2rem;
+    margin-bottom: .2rem;
 }
 
 /* BUTTON */
@@ -168,4 +166,67 @@ body {
 
 .btn-signup:active {
     transform: translateY(0.1rem);
+}
+
+/* MEDIA QUERIES */
+@media only screen and (orientation: landscape) and (max-width: 60em) {
+    .container {
+        margin-top: 3rem;
+    }
+}
+
+@media only screen and (max-width: 35em) {
+
+    .card {
+        grid-template-rows: 17.5rem 20rem;
+        grid-template-columns: repeat(2, 20rem);
+    }
+
+    .section-2__text {
+    	padding: 2rem;
+    }
+
+    .section-3 {
+    	padding: 2rem;
+    }
+
+    .section-3__list {
+        margin-top: 0;
+    }
+
+    .section-3__list:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    .btn-signup {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 27.5rem) {
+
+	.container {
+		margin-top: 3rem;
+	}
+
+    .card {
+    	margin-top: ;
+        grid-template-rows: 24rem repeat(2, 20rem);
+        grid-template-columns: 25rem;
+        grid-template-areas: "section-1"
+            "section-2"
+            "section-3";
+    }
+
+    .section-3__list {
+        margin-top: 1rem;
+    }
+
+    .section-3__list:not(:last-child) {
+        margin-bottom: .2rem
+    }
+
+    .btn-signup {
+        margin-top: 1.5rem;
+    }
 }
