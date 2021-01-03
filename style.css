@@ -2,7 +2,7 @@
 * @Author: Gavin
 * @Date:   2020-12-31 21:29:05
 * @Last Modified by:   Gavin
-* @Last Modified time: 2020-12-31 23:44:24
+* @Last Modified time: 2021-01-03 01:46:54
 */
 
 /* VARIABLES */
@@ -162,6 +162,7 @@ body {
 
 .btn-signup:hover {
     cursor: pointer;
+    background-color: hsl(71, 88%, 54%);
 }
 
 .btn-signup:active {
